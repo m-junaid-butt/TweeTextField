@@ -94,4 +94,8 @@ open class TweeAttributedTextField: TweeActiveTextField {
 		infoLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0).isActive = true
 		infoLabel.topAnchor.constraint(equalTo: bottomAnchor, constant: 2).isActive = true
 	}
+    
+    public func toggleTweePlacholderLabel() {
+        tweePlaceholderPoisition()
+    }
 }

@@ -213,4 +213,12 @@ open class TweePlaceholderTextField: UITextField {
 		centerYConstraint.priority = .defaultHigh
 		centerYConstraint.isActive = true
 	}
+    
+    public func tweePlaceholderPoisition() {
+        if let text = text, text.isEmpty == false {
+            self.minimizePlaceholder()
+        } else {
+            self.maximizePlaceholder()
+        }
+    }
 }
